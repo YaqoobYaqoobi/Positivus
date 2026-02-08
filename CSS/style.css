@@ -88,4 +88,13 @@ nav{
 }
 .container img{
   width: 5rem;
+  
+}
+/* -------------------------------------> divs section <-------------------------- */
+.contaner{
+  width: var(--max--width);
+  margin-inline: auto;
+}
+.first_div_in_divs{
+  display: flex;
 }
