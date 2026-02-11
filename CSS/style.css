@@ -107,6 +107,7 @@ nav{
   background-color: var(--Light--Green);
   padding: 0.2rem 1rem ;
   border-radius: 5px;
+
 }
 .divs_in_divs{
   border: 1px solid var(--black);
@@ -162,9 +163,7 @@ nav{
 .divs_in_divs :is(img){
   width:10rem;
   height: 10rem;
-
 }
-
 .grid_divs_in_divs{
   display: grid;
   grid-template-columns:none repeat(12, 1fr) ;
