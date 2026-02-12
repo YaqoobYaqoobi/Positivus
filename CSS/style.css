@@ -138,8 +138,6 @@ nav{
   right: 0;
   width:40%;
 }
-
-
 .divs_in_divs h3{
   background-color: var(--Light--Green);
   font-size: 2rem;
@@ -185,7 +183,6 @@ nav{
 .divs_4{
  grid-column-start:6 ;
   grid-column-end: 13;
-  
 }
 .divs_5{
   grid-column-start:1 ;
