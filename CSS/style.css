@@ -15,15 +15,18 @@
    box-sizing: border-box;
    font-family: "Space Grotesk", sans-serif;
  }
+ body{
+  margin-inline: auto;
+  width: var(--max--width);
+  border: solid 1px ;
+ }
 /* Nav Bar */
 nav{
   position: static;
   display: flex;
-  margin-inline: auto;
   justify-content: space-between;
   padding: 2rem 0;
   z-index: 10;
-  width: var(--max--width);
   align-items: center;
 }
 .nav_links{
@@ -53,11 +56,12 @@ nav{
   border-radius: 0.6rem;
   text-decoration: none;
   color: var(--Light--white);
+  width: 100%;
+  max-width: 10rem;
+  min-width:15rem;
 }
 .container_header{
   display: flex; 
-   width: var(--max--width);
-  margin-inline:auto ;
   position: relative;
 }
 .div_header{
@@ -80,8 +84,6 @@ nav{
 
 /* ---------------------logos-section------------ */
 .container{
-  width: var(--max--width);
-  margin-inline:auto;
   display:flex;
   padding: 5rem 0;
   justify-content: space-between;
@@ -91,34 +93,26 @@ nav{
   
 }
 /* -------------------------------------> divs section <-------------------------- */
-.contaner{
-  width: var(--max--width);
-  margin-inline: auto;
-}
 .first_div_in_divs{
   display: flex;
   gap: 2rem;
   width: 56%;
   align-items: center;
   padding-bottom: 3rem;
-
 }
 .first_div_in_divs h2{
   background-color: var(--Light--Green);
   padding: 0.2rem 1rem ;
   border-radius: 5px;
-
 }
 .divs_in_divs{
   border: 1px solid var(--black);
-  width:calc((var(--max--width)/2)/1.02);
   border-bottom: 6px solid var(--black);
   border-radius: 30px; 
   display: flex;
   padding: 2rem 1rem;
   justify-content: space-around;
   align-items: center;
-
 }
 .seven_divs_in_divs{
   border-radius: 30px; 
@@ -131,7 +125,15 @@ nav{
 .seven_divs_in_divs div{
   display: flex;
   flex-direction: column;
-  width: 30%;
+  margin-left: 3rem;
+}
+.seven_divs_in_divs p{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0;
+}
+.seven_divs_in_divs span{
+  margin:0 0  2rem  0;
 }
 .seven_divs_in_divs :is(img){
   position: absolute;
@@ -165,7 +167,7 @@ nav{
 .grid_divs_in_divs{
   display: grid;
   grid-template-columns:none repeat(12, 1fr) ;
-  gap: .7rem;
+  gap: 1.4rem;
 }
 .divs_1{
   grid-column-start:1 ;
@@ -195,4 +197,6 @@ nav{
 .divs_7{
   grid-column-start:1 ;
   grid-column-end: 13;
+  margin-top: 5%;
+  height: 350px;
 }
