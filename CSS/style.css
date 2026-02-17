@@ -19,6 +19,12 @@
   margin-inline: auto;
   width: var(--max--width);
   border: solid 1px ;
+  padding: 1px 30px;
+ }
+ .first_div_in_same_section{
+   display: flex;
+   gap: 10px;
+   align-items: center;
  }
 /* Nav Bar */
 nav{
@@ -167,7 +173,7 @@ nav{
 .grid_divs_in_divs{
   display: grid;
   grid-template-columns:none repeat(12, 1fr) ;
-  gap: 1.4rem;
+  row-gap: 1.7rem;
 }
 .divs_1{
   grid-column-start:1 ;
@@ -199,4 +205,52 @@ nav{
   grid-column-end: 13;
   margin-top: 5%;
   height: 350px;
+}
+/* ------------------------------Case Studies section----------------------------*/
+.Case_studies_div{
+  background-color: var(--light--black);
+  border-radius: 25px;
+  display: flex;
+  color: var(--light--Gray);
+  column-gap: 2rem;
+  padding: 5rem 4rem;
+}
+.Case_studies_div .icon_and_learn_more_in_Case_sudies{
+    color:var(--Light--Green);
+    margin-top: 1.5rem;
+}
+.Case_studies_div .icon_and_learn_more_in_Case_sudies i{
+  font-size: 2rem;
+}
+.Null_div_in_Case_Studies{
+  border: solid 0.1px var(--light--Gray);
+}
+
+/* ---------------------------Our Working Process------------------- */
+.span_minus{
+  width: 20px ;
+  height: 2px ;
+}
+.divs_in_Our_working_Process{
+  border: 1px solid var(--black);
+  border-bottom: 5px solid var(--black);
+  border-radius: 20px;
+  padding: 2rem 2.4rem;
+  }
+  .hover_div_in_working{
+   display: none;
+  }
+.Number_of_Divs_working{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Number_of_Divs_working .div_Number_of_div{
+ display: flex;
+ align-items: center;
+ gap: 10px;
+}
+.Number_of_Divs_working .Number_of_div{
+  font-size: 2rem;
+  font-weight: 900;
 }
