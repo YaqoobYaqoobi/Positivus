@@ -73,8 +73,7 @@ nav{
 
 @media (max-width: 768px) {body{padding: 0;margin: 0;}
       section,header{padding: 0 1rem;}
-      nav{position: relative;justify-content:space-between;padding: 1rem 1.5rem; background-color: var(--Light--Green); }
-      .nav_links{position: absolute;top: ;z-index: 5;border:1px solid ;background-color: bisque;width: 20rem;left: 30%; flex-direction: column;gap: 1rem;color: var(--light--Gray); align-items: center;}
+      nav{position: relative;justify-content:space-between;padding: 1rem ;z-index: 5;border:1px solid ;background-color: bisque;width: 20rem;left: 30%; flex-direction: column;gap: 1rem;color: var(--light--Gray); align-items: center;}
       #home_miun{display:inline-block; font-size: 2rem; color: #111111;}
 }
 /* header section */
