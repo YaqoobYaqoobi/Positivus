@@ -129,12 +129,6 @@ nav .nav_img{
   padding: 0.3rem 1rem;
   border-radius: 6px;
 }
-.div_one_in_start_of_ech_section p{
-  width: 45%;
-}
-
-
-
 .services_grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -279,8 +273,6 @@ nav .nav_img{
   border-radius: 50px;
   font-weight: 600;
 }
-.div_in_profile_for_span{
-}
 .div_in_profile_for_span span{
  display: inline-block;
  margin-bottom: 0;
@@ -288,11 +280,106 @@ nav .nav_img{
 .explan_about_profile{
  width: 90%;
 }
+.btn_div_in_porfile{
+  position: relative;
+  height: 6rem;
+}
 .btn_in_profile{
-  display: block;
-  margin-left: 1px;
+  width: max-content;
+  position: absolute;
 
 }
+/* ----------------------------Testmoinals section ------------------*/
+.main_div_in_Testimonials{
+  color: var(--light--Gray);
+  background-color: var(--Gray);
+  border-radius: 30px;
+  padding: 3rem 0;
+}
+.id_div{
+  border: 1px solid var(--Light--Green);
+}
+
+/* -------------------------Contact Us section -------------------------  */
+.Contener{
+    border-radius:20px;
+    background-color: beige;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.form_information{
+    display: flex;
+    flex-direction: column;
+}
+.form_information div{
+    margin: 1rem 0;
+}
+.form_information .all{
+    width: 20rem;
+    border-radius:5px ;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+
+}
+
+/*---------footer------------- */
+
+.head_div_in_footer{
+    background-color:gray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1rem 2rem;
+    color: white;
+}
+.first_div_in_footer{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.first_div_in_footer_2 ul{
+    list-style: none;
+    display: flex;
+    gap: 1.4rem;
+}
+.sceand_div_in_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sceand_div_in_footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.sceand_div_in_footer div p{
+    border-radius: 5px;
+    width: max-content;
+    background-color: greenyellow;
+}
+.sceand_div_in_footer form{
+    padding:  3rem 2rem ;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.sceand_div_in_footer form input,button{
+    padding: .7rem 1.9rem;
+    border-radius: 10px;
+}
+.Null_div_in_footer{
+    width: 100%;
+    border: 1px solid whitesmoke;
+    margin: 2rem 0;
+}
+.last_in_footer{
+    display: flex;
+    gap: 4rem;
+    margin: 0 0 10px ;
+}
+
+
+
 
 
 @media (max-width: 1024px){
