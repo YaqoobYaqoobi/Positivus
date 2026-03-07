@@ -243,16 +243,52 @@ nav .nav_img {
 
 
 /* ----------------------Our Working Proess section ---------------------------- */
+
+
 .divs_in_Our_working_Process {
   border: 1px solid var(--black);
+  border-bottom: 5px solid var(--black);
   border-radius: 30px;
   padding: 3rem;
   align-items: center;
+  margin-bottom: 1.5rem;
 
+}
+.icon_div_in_our_working{
+  border-radius: 100%;
+  background-color: var(--light--Gray);
+  color: var(--black);
+  border: 1px solid;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.icon_div_in_our_working span:nth-child(2){
+  display: none;
+}
+.hover_div_in_working{
+  display: none;
+}
+.divs_in_Our_working_Process:hover{
+  background-color: var(--Light--Green);
+}
+.icon_div_in_our_working:hover span:nth-child(1){
+  display: none;
+}
+.icon_div_in_our_working:hover span:nth-child(2){
+  display: block;
+}
+.divs_in_Our_working_Process:hover  .hover_div_in_working{
+ display: block;
+}
+.Number_of_div{
+  margin: 0 1rem 0 0;
+  font-size: 2rem;
+  font-weight: 900;
 }
 .Number_of_Divs_working {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .Null_div_in_Our_Working_Process {
   width: 100%;
