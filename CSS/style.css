@@ -114,7 +114,7 @@ nav .nav_img {
   padding: 1rem;
 }
 
-/* ------------------------------LOgos section -----------------------*/
+/* ------------------------------Logos section -----------------------*/
 .container {
   display: flex;
   padding: 5rem 0;
@@ -171,9 +171,22 @@ nav .nav_img {
 .service_card:hover {
   transform: translateY(-5px);
 }
-.service_card.dark {
+.service_card.service_card_dark {
   background: #111;
   color: #fff;
+}
+.service_card_green_light_whit{
+  background-color: var(--light--Gray);
+}
+.service_card_green{
+  background-color: var(--Light--Green);
+}
+.service_card_green_light_whit .card_link i ,.service_card_green .card_link i{
+  color: var(--Light--Green);
+}
+.service_card_dark .card_link i{
+  color: var(--black);
+  background-color: var(--light--Gray);
 }
 .service_card img {
   width: 100px;
@@ -195,10 +208,6 @@ nav .nav_img {
   border-radius: 50%;
   padding: 0.4rem;
 }
-
-
-
-
 .service_cta {
   grid-column-start: 1;
   grid-column-end: 13;
@@ -385,24 +394,47 @@ nav .nav_img {
   justify-content: space-between;
   margin: 4rem 0;
 }
+.div_radio_input{
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 0.2rem;
+  text-align: center;
+  background-color: var(--Light--white);
+}
 .form_information {
   display: flex;
   flex-direction: column;
+  width: 35rem;
 }
 .form_information div {
   margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.radio_input_in_form{
+  accent-color: var(--Light--Green );
+  border:none;
+}
+.textarea_in_form{
+  height: 10rem !important;
 }
 .form_information .all {
-  width: 20rem;
-  max-width: none;
-  min-width: none;
-  border-radius: 5px;
+  max-width: 100%;
+  border-radius: 10px;
   padding: 0.4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   outline: none;
+  height: 50px;
+}
+.btn_in_form{
+  max-width: 100%;
 }
 .Contener_form_information img{
-  height: 50vh;
+  height: 100%;
+}
+.Contener_form_information{
+  display: flex;
 }
 /*-------------------------footer--------------------------- */
 .head_div_in_footer {
@@ -421,12 +453,13 @@ nav .nav_img {
 }
 .first_div_in_footer_1 img {
   max-width: 150px;
-  box-shadow: 2px 4px 5px rgba(255, 255, 255, 0.7);
 }
 .first_div_in_footer_2 ul {
   list-style-type: none;
   display: flex;
   gap: 1.4rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .first_div_in_footer_2 ul a{
   color: var(--Light--white);
@@ -473,6 +506,9 @@ button {
 button:hover {
   box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.8);
 }
+.div_in_sceand_div_in_footer{
+  padding: 0.5rem 1rem;
+}
 .sceand_div_in_footer form button {
   background-color: var(--Light--Green);
   color: var(--black);
@@ -491,7 +527,10 @@ button:hover {
 .last_div_in_footer a{
   color: var(--Light--white);
 }
-
+.footer_image{
+  color: #B9FF66;
+  border-radius: 5px;
+}
 
 
 
@@ -533,6 +572,9 @@ button:hover {
   .service_card {
     grid-column: span 12;
   }
+  .service_card h3{
+    font-size: 1rem;
+  }
 
   .Case_studies_div {
     flex-direction: column;
@@ -543,11 +585,38 @@ button:hover {
     gap: 2rem;
   }
 
-  .Contener {
+  /* -----------------===============================----------------------------- */
+  .section_of_Contener_form_information{
+    display: flex;
     flex-direction: column;
-    gap: 2rem;
-    margin: 3rem 0;
   }
+  .Contener_form_information{
+  align-items: center;
+  width: 100%;
+  }
+  .form_information{
+    align-items: center;
+    width: 100%;
+  }
+.form_information .all {
+      width: 100%;
+}
+  .Contener_form_information img{
+  transform: rotate(90deg);
+  height: 20%;
+  width: 50%;
+}
+.Contener {
+    flex-direction: column;
+    gap: .5rem;
+    margin: 0rem 0;
+}
+.sceand_div_in_footer form{
+ display: flex;
+ flex-direction: column; 
+justify-content: center;
+ gap: 1rem;
+}
 }
 
 
@@ -633,9 +702,6 @@ button:hover {
       margin: 2rem 0;
     }
 
-    .form_information .all {
-      width: 100%;
-    }
       .divs_in_Our_working_Process{
   margin-bottom: 1rem;
   padding: 2rem;
@@ -653,6 +719,7 @@ button:hover {
       gap: 1.5rem;
       text-align: center;
     }
+   
   .sceand_div_in_footer {
     flex-direction: column;
     gap: 2rem;
@@ -663,19 +730,6 @@ button:hover {
     text-align: center;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---------- Mobile Small ---------- */
 @media (max-width: 480px) {
   body {
