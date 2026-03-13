@@ -134,7 +134,9 @@ nav .nav_img {
   box-shadow: px 5px 10px rgba(0, 0, 0, 0.1);
   transition: 0.4s;
 }
-
+.logo_section{
+  filter: grayscale()
+}
 /* -------------------------------------Services Section -------------------------------------------- */
 .div_one_in_start_of_ech_section {
   display: flex;
@@ -298,6 +300,10 @@ nav .nav_img {
   justify-content: space-between;
   align-items: center;
 }
+.div_in_working_for_numbers{
+  display: flex;
+  align-items: center;
+}
 .Null_div_in_Our_Working_Process {
   width: 100%;
   border: 1px solid var(--black);
@@ -348,13 +354,15 @@ nav .nav_img {
   width: 90%;
 }
 .btn_div_in_porfile {
-  position: relative;
   height: 6rem;
 }
-.btn_in_profile {
-  margin-left: 2%;
-grid-column-start:3;
-
+.div_btn_in_profile{
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.btn_in_profile{
+ width: 20rem;
 }
 /* ----------------------------Testmoinals section ------------------*/
 .main_div_in_Testimonials {
@@ -392,6 +400,9 @@ grid-column-start:3;
   padding: 0.4rem;
   margin-bottom: 1rem;
   outline: none;
+}
+.Contener_form_information img{
+  height: 50vh;
 }
 /*-------------------------footer--------------------------- */
 .head_div_in_footer {
@@ -529,11 +540,13 @@ button:hover {
 
   .profiles_div {
     grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
   }
 
   .Contener {
     flex-direction: column;
     gap: 2rem;
+    margin: 3rem 0;
   }
 }
 
@@ -543,7 +556,7 @@ button:hover {
 
 
 
-/* ---------- Mobile Large ---------- */
+/* ---------- Tablet ---------- */
 @media (max-width: 768px) {
 
   /* Navbar */
@@ -609,6 +622,7 @@ button:hover {
   /* Profiles */
   .profiles_div {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 .Case_studies_div {
   margin:  1.8rem 0 ;
@@ -616,11 +630,23 @@ button:hover {
     /* Contact */
     .Contener {
       padding: 1.5rem;
+      margin: 2rem 0;
     }
 
     .form_information .all {
       width: 100%;
     }
+      .divs_in_Our_working_Process{
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+    /* --------------------------=-----profile ----------------------- */
+    .div_btn_in_profile{
+  justify-content: center;
+}
+.profiles_div{
+  gap: 1rem;
+}
     /* ------------------------------------------------Footer */
     .first_div_in_footer {
       flex-direction: column;
@@ -659,6 +685,9 @@ button:hover {
 .Hamberger_minu{
   font-size: 1.7rem;
 }
+.div_header{
+  gap: 1rem;
+}
 .div_header h1 {
   font-size: 1.5rem;
 }
@@ -681,6 +710,20 @@ button:hover {
     width: 100%;
     align-items: center;
   }
+  .Number_of_Divs_working {
+  display: flex;
+  justify-content: space-between;
+ 
+
+  align-items: center;
+}
+  .divs_in_Our_working_Process{
+  border-bottom: 4px solid var(--black);
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  }
+ 
 
   .Case_studies_div {
     gap: 0.5;
