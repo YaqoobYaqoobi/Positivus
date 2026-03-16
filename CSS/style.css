@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-
 :root {
   --Light--Green: #B9FF66;
   --black: #000000;
@@ -10,20 +9,17 @@
   --max--width: 1200px;
   --max--width--mobail: 768px;
 }
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Space Grotesk", sans-serif;
 }
-
 body {
   max-width: var(--max--width);
   margin: 0 auto;
   padding: 0 30px;
 }
-
 /* ----------------------------Semaller Tag and other */
 .btn {
   border: solid .1rem black;
@@ -33,14 +29,15 @@ body {
   color: var(--black);
   font-size: .9rem;
 }
-
+.transition_in_some_elemaint{
+transition: 0.5s;
+}
 .btn:hover {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
   color: var(--black);
   background-color: var(--light--Gray);
 
 }
-
 /* ----------------------------Navbar----------------------- */
 nav {
   display: flex;
@@ -48,15 +45,12 @@ nav {
   align-items: center;
   padding: 2rem 0;
 }
-
 nav .nav_logo {
   max-width: 20%;
 }
-
 nav .nav_img {
   width: 100%;
 }
-
 .nav_links {
   display: flex;
   gap: 2rem;
@@ -64,12 +58,10 @@ nav .nav_img {
   align-items: center;
   font-size: .9rem;
 }
-
 .nav_links li a {
   text-decoration: none;
   color: var(--black);
 }
-
 .nav_links li:hover {
   border: none;
   border-radius: 10px;
@@ -77,34 +69,28 @@ nav .nav_img {
   padding: 0.6rem 1.5rem;
   transition: 0.4s;
 }
-
 .Hamberger_minu {
   display: none;
 }
-
 /* ---------------------------header section--------------------- */
 .container_header {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
-
 .div_header {
   width: 50%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-
 .div_header h1 {
   font-size: 4rem;
   line-height: 1.1;
 }
-
 .img_header {
   width: 45%;
 }
-
 .btn_in_header {
   max-width: 15rem;
   min-width: 10rem;
@@ -113,7 +99,6 @@ nav .nav_img {
   text-align: center;
   padding: 1rem;
 }
-
 /* ------------------------------Logos section -----------------------*/
 .container {
   display: flex;
@@ -122,12 +107,10 @@ nav .nav_img {
   flex-wrap: wrap;
   gap: 1rem;
 }
-
 .container img {
   max-width: 7rem;
   height: auto;
 }
-
 .container img:hover {
   border: none;
   max-width: 8rem;
@@ -188,14 +171,37 @@ nav .nav_img {
   color: var(--black);
   background-color: var(--light--Gray);
 }
-.service_card img {
-  width: 100px;
-  height: 100px;
+.service_card img {width: 100px;height: 100px;}
+._1_4_6_{
+  background-color: var(--light--Gray);
+  border-radius: 10px;
+  color: var(--black);
+  padding: 0.5rem;
+  max-width: max-content;
 }
-.service_card h3 {
+._2_3_5_ {
+  background-color: var(--Light--Green);
+  border-radius: 10px;
+  color: var(--black);
+  padding: 0.5rem;
+  max-width: max-content;
+}
+/* ------------------------------ */
+.first_div_in_service_card{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.first_div_in_service_card div:nth-child(1){
+display: flex;
+flex-direction: column;
+font-weight: 900;
+}
+.service_card .span_in_service {
   font-size: 1.6rem;
-  line-height: 1.3;
 }
+/* -------------------------- */
 .card_link {
   margin-top: 2rem;
   display: flex;
@@ -225,9 +231,9 @@ nav .nav_img {
   gap: 1rem;
 }
 .service_cta img {
-  width: 25%;
+  width: 23%;
   position: absolute;
-  right: 10%;
+  right: 6%;
 }
 .service_cta p {
   font-size: 1.6rem;
@@ -259,11 +265,7 @@ nav .nav_img {
   margin-top: 1rem;
   gap: 50px;
 }
-
-
 /* ----------------------Our Working Proess section ---------------------------- */
-
-
 .divs_in_Our_working_Process {
   border: 1px solid var(--black);
   border-bottom: 5px solid var(--black);
@@ -271,7 +273,7 @@ nav .nav_img {
   padding: 3rem;
   align-items: center;
   margin-bottom: 1.5rem;
-
+  transition: 0.5s;
 }
 .icon_div_in_our_working{
   border-radius: 100%;
@@ -295,9 +297,11 @@ nav .nav_img {
 }
 .icon_div_in_our_working:hover span:nth-child(2){
   display: block;
+  transition: 0.5s;
 }
 .divs_in_Our_working_Process:hover  .hover_div_in_working{
  display: block;
+ transition: 0.5s;
 }
 .Number_of_div{
   margin: 0 1rem 0 0;
@@ -383,8 +387,6 @@ nav .nav_img {
 .id_div {
   border: 1px solid var(--Light--Green);
 }
-
-
 /* -------------------------Contact Us section -------------------------  */
 .Contener {
   border-radius: 20px;
@@ -428,7 +430,7 @@ nav .nav_img {
   height: 50px;
 }
 .btn_in_form{
-  max-width: 100%;
+max-width:  100% !important;
 }
 .Contener_form_information img{
   height: 100%;
@@ -531,34 +533,8 @@ button:hover {
   color: #B9FF66;
   border-radius: 5px;
 }
-
-
-
-/* ================== FIXES & IMPROVEMENTS ================== */
-
-/* --- Logo hover fix --- */
-.container img:hover {
-  max-width: 8rem;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-
-/* ================== RESPONSIVE IMPROVEMENTS ================== */
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---------- Tablet & Small Laptop ---------- */
+/* -----------------------------------------------------------------------  Laptop ------------------------------------------------------------- */
 @media (max-width: 1024px) {
-
   .div_header h1 {
     font-size: 3rem;
   }
@@ -566,6 +542,8 @@ button:hover {
     width: 30%;  
     right: 5%;
   }
+  .service_card .span_in_service {
+  font-size: 1.3rem;}
   .div_in_service_cta{
     width: 59%;
   }
@@ -575,17 +553,13 @@ button:hover {
   .service_card h3{
     font-size: 1rem;
   }
-
   .Case_studies_div {
     flex-direction: column;
   }
-
   .profiles_div {
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
   }
-
-  /* -----------------===============================----------------------------- */
   .section_of_Contener_form_information{
     display: flex;
     flex-direction: column;
@@ -595,7 +569,6 @@ button:hover {
   width: 100%;
   }
   .form_information{
-    align-items: center;
     width: 100%;
   }
 .form_information .all {
@@ -609,26 +582,16 @@ button:hover {
 .Contener {
     flex-direction: column;
     gap: .5rem;
-    margin: 0rem 0;
+    margin: 1rem 0;
 }
 .sceand_div_in_footer form{
  display: flex;
  flex-direction: column; 
 justify-content: center;
- gap: 1rem;
+ gap: 1rem;}
 }
-}
-
-
-
-
-
-
-
-/* ---------- Tablet ---------- */
+/* ---------- ----------------------------------------------------Tablet------------------------------------------ ---------- */
 @media (max-width: 768px) {
-
-  /* Navbar */
   .nav_links {
     position: absolute;
     left: 0;
@@ -654,72 +617,70 @@ justify-content: center;
 .nav_links.active {
     top: 70px;
   }
-
-  /*-------------------------- Header------------------- */
-  .container_header {
+.container_header {
     flex-direction: column;
-    text-align: center;
-  }
-  .img_header {
+    text-align: center;}
+.img_header {
+    width: 90%;}
+.div_header{
     width: 90%;
-  }
-  .div_header{
-    width: 90%;
-    align-items: center;
-
-  }
-  .div_header h1 {
+    align-items: center;}
+.div_header h1 {
     font-size: 2rem;
   }
-  /* -----------------------------logo section------------------------ */
+.service_card .span_in_service {
+  font-size: 1.2rem;
+}
 .logo_section{
   padding: 0 0 2rem 0;
 }
-
-
-/* -------------------------------header in all section ---------------------- */
+.Contener_form_information img{
+    display: none;}
 .div_one_in_start_of_ech_section{
   flex-direction: column;
   margin-bottom: 1rem;
   gap: 0.4rem;
 }
-  /* Services */
-  .services_grid {
+.services_grid {
     gap: 1rem;
   }
-
-  /* Profiles */
-  .profiles_div {
+.profiles_div {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 .Case_studies_div {
   margin:  1.8rem 0 ;
 }
-    /* Contact */
-    .Contener {
+.Contener {
       padding: 1.5rem;
       margin: 2rem 0;
     }
-
-      .divs_in_Our_working_Process{
+.divs_in_Our_working_Process{
   margin-bottom: 1rem;
   padding: 2rem;
 }
-    /* --------------------------=-----profile ----------------------- */
+.icon_div_in_our_working{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.div_in_service_cta{
+    width: 100%;
+    align-items: center;
+  }
+.service_cta img{
+  display: none;
+}
     .div_btn_in_profile{
   justify-content: center;
 }
 .profiles_div{
   gap: 1rem;
 }
-    /* ------------------------------------------------Footer */
-    .first_div_in_footer {
-      flex-direction: column;
-      gap: 1.5rem;
-      text-align: center;
-    }
-   
+.first_div_in_footer {
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
   .sceand_div_in_footer {
     flex-direction: column;
     gap: 2rem;
@@ -735,7 +696,6 @@ justify-content: center;
   body {
     padding: 0 15px;
   }
-
 .Hamberger_minu{
   font-size: 1.7rem;
 }
@@ -748,38 +708,44 @@ justify-content: center;
 .div_header p,.div_one_in_start_of_ech_section p,.span_in_div_CTA,.Case_studies_div{
   font-size: 0.8rem;
 }
-  .btn {
+.btn {
     padding: .5rem 1rem;
     font-size: .8rem;
-  }
-
-  .service_card {
+}
+.service_card .span_in_service {
+  font-size: 0.7rem;
+}
+.card_link span{
+  font-size: 0.5rem;
+}
+.service_card {
     padding: 1.2rem;
-  }
-  
-   .service_cta img{
+}
+.service_cta img{
     display: none;
-  }
-  .div_in_service_cta{
-    width: 100%;
-    align-items: center;
-  }
+}
   .Number_of_Divs_working {
   display: flex;
   justify-content: space-between;
- 
-
   align-items: center;
 }
-  .divs_in_Our_working_Process{
+.icon_div_in_our_working{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.divs_in_Our_working_Process{
   border-bottom: 4px solid var(--black);
   padding: 1rem;
   margin-bottom: 0.5rem;
   font-size: 1rem;
-  }
- 
-
-  .Case_studies_div {
+}
+.divs_in_Our_working_Process span:nth-child(1){
+  font-size: 1rem;
+}
+.divs_in_Our_working_Process span:nth-child(2){
+  font-size: .7rem;
+}
+.Case_studies_div {
     gap: 0.5;
   }
   .main_div_in_Testimonials {
